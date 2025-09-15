@@ -3,7 +3,9 @@
 {
 	"name": "Codex Universal Runtime",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// See https://github.com/openai/codex-universal for more details.
 	"image": "ghcr.io/openai/codex-universal:latest",
+	
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -11,14 +13,14 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 		8080,
-		3000,
 		80,
-		443
+		443,
+		3000 // nextjs
 	]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
-	
+
 	// Configure tool-specific properties.
 	// "customizations": {},
 
